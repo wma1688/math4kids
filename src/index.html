@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Math for Kids</title>
+    <link rel="stylesheet" type="text/css" href="css/mc.css">
+</head>
+<body onload="mc.loadSound();">
+    <div class="mc">
+        <div class="sect-top-1">
+            <ul class="black-stars">
+                <li class="balls-stars-count">0.0.0</li>
+            </ul>
+            <ul class="yellow-stars"></ul>
+        </div>
+        <ul class="sect-top-2"></ul>
+        <ul class="sect-mid">
+            <li class="nums first-num">10</li>
+            <li class="calc-sign">&times;</li>
+            <li class="nums second-num">10</li>
+            <li>=</li>
+            <li class="nums product-num">100</li>
+            <li class="right-wrong" id="backspace">&larr;</li>
+        </ul>
+        <div class="sect-bot">
+            <ul class="sect-bot-left">
+                <li data-product="1">1</li>
+                <li data-product="2">2</li>
+                <li data-product="3">3</li>
+                <li data-product="4">4</li>
+                <li data-product="5">5</li>
+                <li data-product="6">6</li>
+                <li data-product="7">7</li>
+                <li data-product="8">8</li>
+                <li data-product="9">9</li>
+                <li data-product="0">0</li>
+                <li class="done">Enter</li>
+            </ul>
+            <div class="sect-bot-right">
+                <div class="clear-btn" id="clear-history">C</div>
+                <ul class="next-question" id="nextq">
+                    <li>N</li>
+                    <li>E</li>
+                    <li>X</li>
+                    <li>T</li>
+                </ul>
+            </div>
+        </div>
+        <div class="silk-cover"></div>
+        <div class="clear-confirm">
+            <div class="clear-confirm-title">Confirmation</div>
+            <ul class="stat">
+                <li>Total:</li>
+                <li id="total">0</li>
+                <li>Correct:</li>
+                <li id="correct">0</li>
+            </ul>
+            <div class="clear-confirm-text">
+                <span>Clear your play records?</span>
+                <span>Press "OK" to confirm.</span>
+            </div>
+            <div class="clear-confirm-btns">
+                <span id="clear-confirm-ok">OK</span>
+                <span id="clear-confirm-cancel">Cancel</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/createjs-2014.12.12.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/touche.min.js"></script>
+    <script src="js/mc.js"></script>
+</body>
+
+</html>

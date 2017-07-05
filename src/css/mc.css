@@ -1,0 +1,406 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0179C6;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.mc {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent url("/mc/images/cool-blue-bg.png") 0 0 / 100% 100% no-repeat;
+}
+.mc .sect-top-1,
+.mc .sect-top-2,
+.mc .sect-mid,
+.mc .sect-bot {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+.mc .sect-top-1 .yellow-stars,
+.mc .sect-top-1 .black-stars {
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 32px;
+}
+.mc .sect-top-1 .black-stars {
+    margin-bottom: 2px;
+}
+.mc .sect-top-1 li {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 1px;
+}
+.mc .sect-top-1 .black-stars>li {
+    background: transparent url("/mc/images/black-star.png") left bottom / 100% 100% no-repeat;
+}
+.mc .sect-top-1 .black-stars>li.balls-stars-count {
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 0;
+    background-image: none;
+    color: #aaa;
+    border: none;
+    text-align: right;
+    font-family: Consolas, "Courier New", Courier, "Lucida Console", monospace;
+    font-weight: 100;
+    line-height: 30px;
+    width: 80px;
+}
+.mc .sect-top-1 .yellow-stars>li {
+    background: transparent url("/mc/images/fat-star.png") left bottom / 100% 100% no-repeat;
+}
+.mc .sect-top-2 {
+    height: 35px;
+    padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.mc .sect-top-2>li {
+    width: 30px;
+    height: 30px;
+    float: left;
+    opacity: 1;
+    background: transparent url("/mc/images/pokeball.png") left bottom / 30px 30px no-repeat;
+}
+.mc .sect-top-2>li.new-ball {
+    position: absolute;
+    left: 90%;
+    bottom: 0;
+}
+.mc .sect-top-2>li.leave-ball {
+    position: absolute;
+    bottom: 0;
+}
+.mc .sect-top-1 li.new-star {
+    width: 70px;
+    height: 70px;
+    z-index: 99;
+    position: absolute;
+}
+.mc .sect-mid {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow: 0px 2px 3px #f00;
+    z-index: 90;
+}
+.mc .sect-mid>li {
+    float: left;
+    font-size: 44px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 3px;
+    width: 50px;
+}
+.mc .sect-mid>.nums {
+    width: 132px;
+    box-sizing: border-box;
+}
+.mc .sect-mid>.product-num {
+    width: 172px;
+}
+.mc .sect-mid>.right-wrong {
+    float: right;
+    background: transparent url("") 0 0 / 80px 80px no-repeat;
+    width: 80px;
+    font-size: 60px;
+    line-height: 80px;
+    color: #39f;
+    cursor: pointer;
+}
+.mc .sect-bot .sect-bot-left {
+    width: 75%;
+    margin: 0;
+    padding: 2px;
+    float: left;
+    box-sizing: border-box;
+}
+.mc .sect-bot .sect-bot-left>li {
+    float: left;
+    border: 2px solid #999;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    text-shadow: 0px 0px 3px #39f;
+    box-sizing: border-box;
+    width: 31%;
+    height: 60px;
+    margin: 2px 1%;
+    line-height: 60px;
+}
+
+.mc .sect-bot .sect-bot-left>.done {
+    width: 64%;
+}
+.mc .sect-bot .sect-bot-right {
+    display: block;
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    width: 23%;
+    height: 250px;
+    margin: 2px 2% 0 0;
+    padding: 0;
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 0px 0px 3px #39f;
+}
+.mc .sect-bot .sect-bot-right .clear-btn {
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 2px solid #999;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 56px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    text-shadow: 0px 0px 3px #39f;
+    box-sizing: border-box;
+}
+.mc .sect-bot .sect-bot-right .next-question {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 188px;
+    margin: 4px 0 0 0;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 0px 0px 3px #39f;
+    border: 2px solid #999;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mc .next-question>li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44px;
+    border: none;
+}
+.mc .silk-cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+    background-color: #000;
+    opacity: 0.3;
+}
+.mc .clear-confirm {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 200px;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #444;
+    text-align: center;
+    z-index: 310;
+    box-sizing: board-box;
+}
+.mc .clear-confirm>div {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.mc .clear-confirm>.clear-confirm-title {
+    height: 40px;
+    padding: 0 0 0 20px;
+    background-color: #453D3F;
+    text-shadow: 0px 1px 1px #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #f00;
+    text-align: left;
+    border-bottom: 1px solid #453D3F;
+}
+.mc .stat {
+    height: 30px;
+    background-color: #cfcfcf;
+    clear: both;
+}
+.mc .stat>li {
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 0 0 10px;
+}
+.mc .stat>li[id] {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    padding: 1px 15px 0;
+    text-align: center;
+    font-family: Consolas, "Courier New", Courier, "Lucida Console", monospace;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.mc .clear-confirm>.clear-confirm-text {
+    height: 90px;
+    padding: 10px 0 0;
+    color: #453D3F;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+}
+.mc .clear-confirm>.clear-confirm-text>span {
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+}
+.mc .clear-confirm>.clear-confirm-btns {
+    height: 40px;
+    padding: 0;
+    color: #453D3F;
+    background-color: #cfcfcf;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 40px;
+    border-top: 1px solid #453D3F;
+}
+.mc .clear-confirm>.clear-confirm-btns>span {
+    display: block;
+    width: 50%;
+    float: right;
+    padding: 0;
+    color: #453D3F;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 40px;
+    border-right: 1px solid #453D3F;
+    box-sizing: border-box;
+    text-shadow: 0px 1px 1px #222;
+    cursor: pointer;
+}
+.mc .clear-confirm>.clear-confirm-btns>span:first-child {
+    border-right: none;
+}
+@media screen and (max-width: 660px) {
+    .mc {
+        background: transparent url("/mc/images/cool-blue-bg.png") 0 0 / auto 100% no-repeat;
+    }
+    .mc .sect-top-2 {
+        height: 35px;
+        padding-top: 5px;
+    }
+    .mc .sect-top-2>li {
+        width: 30px;
+        height: 30px;
+        background: transparent url("/mc/images/pokeball.png") left bottom / 30px 30px no-repeat;
+    }
+    .mc .sect-mid {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .mc .sect-mid>li {
+        font-size: 34px;
+        width: 40px;
+        margin: 0;
+    }
+    .mc .sect-mid>.nums {
+        width: 40px;
+    }
+    .mc .sect-mid>.product-num {
+        width: 70px;
+    }
+    .mc .sect-mid>.right-wrong {
+        background: transparent url("") 0 0 / 60px 60px no-repeat;
+        width: 60px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .mc {
+        background: transparent url("/mc/images/cool-blue-bg.png") 0 0 / auto 100% no-repeat;
+    }
+    .mc .sect-top-2 {
+        height: 35px;
+        padding-top: 5px;
+    }
+    .mc .sect-top-2>li {
+        width: 30px;
+        height: 30px;
+        background: transparent url("/mc/images/pokeball.png") left bottom / 30px 30px no-repeat;
+    }
+    .mc .sect-mid {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .mc .sect-mid>li {
+        font-size: 34px;
+        width: 40px;
+        margin: 0;
+    }
+    .mc .sect-mid>.nums {
+        width: 40px;
+    }
+    .mc .sect-mid>.product-num {
+        width: 70px;
+    }
+    .mc .sect-mid>.right-wrong {
+        background: transparent url("") 0 0 / 60px 60px no-repeat;
+        width: 60px;
+        font-size: 48px;
+        line-height: 70px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .mc .sect-mid {
+        height: 60px;
+    }
+    .mc .sect-mid>li {
+        height: 60px;
+        line-height: 60px;
+    }
+    .mc .sect-mid>.nums {
+        width: 40px;
+    }
+    .mc .sect-mid>.product-num {
+        width: 70px;
+    }
+}
